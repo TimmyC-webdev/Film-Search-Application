@@ -1,0 +1,172 @@
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #28282b;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.movieSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 100px;
+  margin: 5rem auto;
+  background-color: #f2f2f2;
+  border-radius: 9px;
+  padding: 5rem auto 5rem auto;
+}
+
+@media screen and (max-width: 480px) {
+  .movieSearch {
+    width: 90vw;
+  }
+}
+
+.movieSearch input {
+  height: 60px;
+  width: 280px;
+  border-radius: 12px;
+  padding-left: 0.8rem;
+  font-size: 1.3rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+@media screen and (max-width: 331px) {
+  .movieSearch input {
+    height: 30px;
+    width: 160px;
+  }
+}
+.movieSearch input:focus {
+  background: transparent;
+}
+.movieSearch ::placeholder {
+  padding-left: 0.8rem;
+}
+
+.movieSearch button {
+  height: 60px;
+  width: 80px;
+  border-radius: 21px;
+  font-size: 1.3rem;
+  background-color: #6600ff;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.detailsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .detailsWrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+.movieDetails {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+i {
+  padding-right: 1rem;
+  font-size: 2em;
+  color: #6600ff;
+}
+
+.message {
+  text-align: center;
+  font-weight: 300;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(27 18 18 0.4);
+  margin-top: 2rem;
+}
+
+.moviePoster {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 5rem;
+
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .moviePoster {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+span {
+  text-align: center;
+}
+
+#ratings {
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 9;
+  background-color: #6600ff;
+  padding: 0.5rem;
+  margin: 4rem 0.7rem;
+}
+
+.plot {
+  width: 50%;
+  height: auto;
+  margin: left;
+  font-size: 1.8em;
+  padding: 2rem 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .plot {
+    width: auto;
+    margin: auto;
+    font-size: 1.3em;
+  }
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+}
+h2 {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}

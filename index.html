@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Film DB Application</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="movieSearch">
+        <input
+          type="text"
+          id="movie_title"
+          value=""
+          placeholder="Search Movie"
+        />
+        <button id="search_btn">Go</button>
+      </div>
+
+      <div
+        id="result"
+        role="region"
+        aria-live="assertive"
+        aria-relevant="additions"
+      ></div>
+      <div id="poster"></div>
+    </main>
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
